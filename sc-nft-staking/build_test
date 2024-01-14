@@ -1,0 +1,1 @@
+cargo test --package sc-deainostri-nft-staking --test new -- init_test --exact --nocapture

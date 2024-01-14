@@ -1,0 +1,29 @@
+[package]
+name = "deainostri-nft-minter-wasm"
+version = "1.2.0"
+authors = ["deainostri"]
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+
+[dependencies.deainostri-nft-minter]
+path = ".."
+
+[dependencies.elrond-wasm-node]
+version = "0.31.1"
+
+[dependencies.elrond-wasm-output]
+version = "0.31.1"
+features = ["wasm-output-mode"]
+
+[workspace]
+members = ["."]

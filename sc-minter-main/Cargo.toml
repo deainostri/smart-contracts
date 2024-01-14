@@ -1,0 +1,20 @@
+[package]
+name = "deainostri-nft-minter"
+version = "1.2.0"
+authors = ["deainostri"]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.elrond-wasm]
+version = "0.31.1"
+
+[dev-dependencies.elrond-wasm-debug]
+version = "0.31.1"
+
+[dev-dependencies]
+num-bigint = "0.4.3"
+num-traits = "0.2.15"
+hex = "0.4.3"

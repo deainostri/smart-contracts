@@ -1,0 +1,15 @@
+[package]
+name = "deainostri-nft-minter-meta"
+version = "1.2.0"
+authors = ["deainostri"]
+edition = "2018"
+publish = false
+
+[dependencies.deainostri-nft-minter]
+path = ".."
+
+[dependencies.elrond-wasm]
+version = "0.31.1"
+
+[dependencies.elrond-wasm-debug]
+version = "0.31.1"
